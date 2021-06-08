@@ -1,0 +1,63 @@
+<html>
+<head>
+<link rel="stylesheet" href="navbar.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+<body class="body">
+<div class="topnav" id="myTopnav">	
+	<div>
+	Sachin Goud
+	</div>
+	<div>
+	  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Gallery')">Gallery</button>
+  <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+    <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+	</div>
+</div>
+<div id="Home" class="tabcontent">
+<img src="sachin.jpg" width="50%" height="100%" class="img-center"></img>
+</div>
+<div id="Gallery" class="tabcontent">
+<h2>This is in News Tab</h2>
+</div>
+<div id="Contact" class="tabcontent">
+<h2>This is in Contact Tab</h2>
+</div>
+<div id="About" class="tabcontent">
+<h2>This is in about Tab</h2>
+</div>
+</body>
+</html>

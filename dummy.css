@@ -1,0 +1,138 @@
+/*.body{
+font-family: 'Poppins', sans-serif;
+}
+.main {
+    background-color:#2E4272;
+    display:flex;
+}
+.firstDiv {
+    background-color:#4F628E;
+    width: 200px;
+}
+.secondDiv {
+    text-align:center;
+    background-color:#7887AB;
+    flex-grow: 1;
+}
+.column{
+float: left;
+  width: 33.33%;
+  padding: 5px;
+}*/
+.content{
+padding-top:170px;
+}
+.body{	
+font-family: 'Poppins', sans-serif;
+}		
+.header{
+background-color:#669999;
+  border-radius:15px;
+  width:100%;
+  position: fixed;
+  top:0;
+}
+.name{
+text-align:left;
+}
+.nav-bar{
+text-align:center;
+}
+.navbarbutton{
+background-color:#669999;
+border:none;
+text-align: center;
+display: inline-block;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-transform:uppercase;
+  border-radius:15px;
+
+}
+.navbarbutton:hover{
+background-color:#00ff00;
+}
+.navbarbutton:active{
+background-color:#e60073	;
+}
+.home{
+display:flex;
+}
+.first-grid{
+padding-top:100px;
+text-align:center;
+width:50%;
+}
+.second-grid{
+text-align:center;
+background-color:#ff5c33;
+height:70%;
+border-radius:15px;
+}
+.home-img{
+margin-top: 8px;
+  vertical-align: middle;
+  width: 40%;
+  height:700px;
+  border-radius:15px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-gallery {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.gallery-content{
+text-align:center;
+border-radius:15px;
+background-color:#000000;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius:15px;
+}
+.img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.contact-class{
+text-align:center;
+padding-top:400px;
+}
+
+
+.icons{
+width:40px;
+border-radius:50%;
+}
+
+
+.about-class{
+text-align:center;
+padding-top:200px;
+}
