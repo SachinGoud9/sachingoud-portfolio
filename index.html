@@ -1,6 +1,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="dummy.css">
+<link rel="stylesheet" href="admin.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,6 +25,7 @@ function openCity(cont) {
 		<button class="navbarbutton" onclick="openCity('About')"><b>About</b></button>
 		<button class="navbarbutton" onclick="openCity('Contact')"><b>Contact</b></button>
 		<button class="navbarbutton" onclick="openCity('Gallery')"><b>Gallery</b></button>
+		<button class="navbarbutton" onclick="openCity('GalleryAdmin')"><b>Gallery Admin</b></button>		
 		</nav>
 		</h1>
 </header>
@@ -33,7 +35,7 @@ function openCity(cont) {
 
 <div id="Home" class="content home">
 <div class="first-grid">
-<b>Hola...!</b><br>
+<b>Hola...!</b>
 <h4><b>Greetings from Sachin Goud S.</b></h4>
 </div>
 <div class="second-grid">
@@ -71,6 +73,29 @@ function openCity(cont) {
 
 
 <div id="Contact" class="content contact-class" style="display:none">
+
+<form class="contact-form" name="contact-form" onsubmit="return validateForm()" method="post">
+	<h1 style="text-align:center;"><b>Let's Connect</b></h1>
+	<input type="text" name="firstName" placeholder="First Name" >
+	<input type="text" name="lastName" placeholder="Last Name">
+	<br>
+	</br>
+	<input class="gutter" name="phone" type="text" placeholder="Phone Number">
+	<input type="email" name="email" placeholder="Email">
+	<br>
+	</br>
+	<textarea name="message" placeholder="Leave a message"></textarea>
+	<br>
+	<input type="submit"  value="Send">
+</form>
+<script src="validation.js"  type="text/javascript" ></script>
+<br>
+</br>
+<a href="https://www.linkedin.com/in/sachin-goud-92277768/" target="_blank"><i style="padding:10px 10px 10px 10px" class="fa fa-linkedin-square" style="font-size:48px;color:red"></i></a>
+<a href="https://github.com/SachinGoud9/" target="_blank"><i style="padding:10px 10px 10px 10px"  class="fa fa-github" style="font-size:48px;"></i></a>
+<a href="https://www.instagram.com/sach_in_goud/" target="_blank"><i style="padding:10px 10px 10px 10px"  class="fa fa-instagram" style="font-size:48px;color:red"></i></a>
+<a href="https://www.facebook.com/sachingoud200/" target="_blank"><i style="padding:10px 10px 10px 10px"  class="fa fa-facebook" style="font-size:48px;color:red"></i></a>
+<!--
 <h1>Let's Connect</h1>
 <br>
 </br>
@@ -78,6 +103,121 @@ function openCity(cont) {
 <a href="https://github.com/SachinGoud9/" target="_blank"><i style="padding:10px 10px 10px 10px"  class="fa fa-github" style="font-size:48px;"></i></a>
 <a href="https://www.instagram.com/sach_in_goud/" target="_blank"><i style="padding:10px 10px 10px 10px"  class="fa fa-instagram" style="font-size:48px;color:red"></i></a>
 <a href="https://www.facebook.com/sachingoud200/" target="_blank"><i style="padding:10px 10px 10px 10px"  class="fa fa-facebook" style="font-size:48px;color:red"></i></a>
+
+-->
 </div>
+
+
+
+
+
+<div id="GalleryAdmin" class="content gallery-admin" style="display:none">
+	</br><h1>Gallery Admin</h1>
+	 <button id="add_button" type="button" class="add-image-button" >Add Image</button>
+	 <div id = "galleryPics" class="gallery-content" style="margin-top:30px">
+	 </div>
+	 
+	 
+	 <div id="myModal" class="modal" style="display:none">
+
+        <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Add Image</h2>
+            </div>
+            <div class="modal-body">
+            <form id="image_form" action="" name="form2">
+            	                <br>
+
+                <div class="row">
+                    <label for="nameimg">Image-Name:</label><br />
+                    <input id="nameimg" class="input" name="nameimg" type="text" value="" size="30" /><br />
+                </div>
+                <br>
+                <div class="row">
+                    <label for="url">Image-URL:</label><br />
+                    <input id="url" class="input" name="url" type="text" value="" /><br />
+                </div>
+                <br>
+
+                <div class="row">
+                    <label for="info">Image-info:</label><br />
+                    <input id="info" class="input" name="info" rows="7" cols="30" value=""></input><br />
+                </div>
+                                <br>
+
+                <div class="row">
+                    <label for="update">Upload-date(dd/mm/yyyy):</label><br />
+                    <input id="update" class="input" name="update" type="text" value=""></input><br />
+                </div>
+                                <br>
+
+                <button id="Addimage_button" type="button">Add Image</button>
+            </form>
+
+            </div>
+           
+        </div>
+
+    </div>
+    <div id="myModal1" class="modal1" style="display:none">
+
+    <div class="modal-content1">
+            <div class="modal-header1">
+              <span class="close1">&times;</span>
+              <h2>Update/Remove Image</h2>
+            </div>
+            <div class="modal-body1">
+
+            <form id="remove_form" action="" name="form3" autocomplete="off">
+            	<br>
+                <div class="row">
+                    <label for="nameimg1">Image-Name:</label><br />
+                    <input id="nameimg1" class="input" name="nameimg1" type="text" value="" size="30" /><br />
+                </div>
+                <br>
+                <div class="row">
+                    <label for="url1">Image-URL:</label><br />
+                    <input id="url1" class="input" name="url1" type="text" value="" /><br />
+                </div>
+
+                <br>
+                <div class="row">
+                    <label for="info1">Image-info:</label><br />
+                    <input id="info1" class="input" name="info1" rows="7" cols="30" value=""></input><br />
+                </div>
+
+                <br>
+                <div class="row">
+                    <label for="update1">Upload-date(dd/mm/yyyy):</label><br />
+                    <input id="update1" class="input" name="update1" type="text" value=""></input><br />
+                </div>
+                <br>
+                <div class="row">
+                <button id='Updateimage_button' type="button">Update Image</button>
+                <button id='Removeimage_button' type="button">Remove Image</button>
+            </div>
+            </form>
+
+            </div>
+            
+        </div>
+
+    </div>	
+	 
+	 
+	 
+</div>
+
+<script src="galleryAdmin.js"></script>
+
+
+
+
+
+
+
+
+
 </body>
 </html>

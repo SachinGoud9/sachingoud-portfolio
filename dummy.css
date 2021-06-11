@@ -56,18 +56,21 @@ background-color:#00ff00;
 background-color:#e60073	;
 }
 .home{
-display:flex;
+display:inline-flex;
 }
 .first-grid{
 padding-top:100px;
 text-align:center;
 width:50%;
+display:inline;
 }
 .second-grid{
 text-align:center;
 background-color:#ff5c33;
 height:70%;
+width:50%;
 border-radius:15px;
+display:inline;
 }
 .home-img{
 margin-top: 8px;
@@ -135,4 +138,46 @@ border-radius:50%;
 .about-class{
 text-align:center;
 padding-top:200px;
+}
+
+.contact-form{
+background-color:blue;
+text-align:center;
+box-sizing: border-box;
+margin-left: 150px; 
+margin-right: 150px;
+overflow:auto;
+}
+input[type="text"], input[type="email"]{
+	height: 50px;
+	width: 25%;
+	font-family: 'Poppins', sans-serif;
+	font-size:16px;
+	overflow:auto;
+}
+textarea {
+            height: 106px;
+            width:600px;
+            margin-bottom: 22px;
+            font-size:16px;
+            overflow:auto;
+}
+input[type="submit"] {
+	font-size:16px;
+	background-color:black;
+font-family: 'Poppins', sans-serif;
+            color: white;
+            height: 45px;
+            width: 100%;
+            max-width:93px;
+            text-align: center;
+            overflow:auto;	
+}
+.gallery-admin{
+text-align:center;
+}
+.add-image-button{
+font-family: 'Poppins', sans-serif;
+font-size:20px;
+border-radius:12px;
 }

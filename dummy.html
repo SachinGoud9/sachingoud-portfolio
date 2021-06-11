@@ -1,0 +1,83 @@
+<html>
+<head>
+<link rel="stylesheet" href="dummy.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+
+function openCity(cont) {
+  var i;
+  var x = document.getElementsByClassName("content");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cont).style.display = "block";  
+}
+
+</script>
+<body class="body">
+<header class="header">
+		<h1 class="name">Sachin Goud S 
+		<nav class="nav-bar">
+		<button class="navbarbutton" onclick="openCity('Home')"><b>Home</b></button>
+		<button class="navbarbutton" onclick="openCity('About')"><b>About</b></button>
+		<button class="navbarbutton" onclick="openCity('Contact')"><b>Contact</b></button>
+		<button class="navbarbutton" onclick="openCity('Gallery')"><b>Gallery</b></button>
+		</nav>
+		</h1>
+</header>
+
+
+
+
+<div id="Home" class="content home">
+<div class="first-grid">
+<b>Hola...!</b><br>
+<h4><b>Greetings from Sachin Goud S.</b></h4>
+</div>
+<div class="second-grid">
+<img class="home-img" src="ProfessionalPhoto.jpg"></img>
+</div>
+</div>
+
+
+
+<div id="About" class="content about-class" style="display:none">
+<h4>Thanks For Reaching Out.</h4>
+<h5 style="font-size:24px">Hi, I am Sachin Goud.</h5>
+<p style="font-size:24px"> I am Student at Sreenidhi Institute of Science and Technology. I am doing my Bachelor's in Computer Science and Engineering.</p>
+<p style="font-size:24px">What Fascinates me more is how technology is empowering the World.</p>
+<p style="font-size:24px">Good to be part of the Journey of Transformation. </p>
+<p style="font-size:24px">Apart From my Professional Life</p>
+<p style="font-size:24px">I Focus on Improving my skills.</p>
+<p style="font-size:24px">Playing Cricket, Watching Cricket and Reading Books are the list of my Hobbies.</p>
+<p>Check out my Resume for Tech Skills <a target="_blank" href="Resume_Sachin_2021Grad.pdf">Resume</a></p>
+</div>
+
+
+
+<div id="Gallery" class="content gallery-content" style="display:none">
+<img class="column-gallery" src="1.jpg" width="100%" ></img>
+<img class="column-gallery" src="2.jpg" width="100%" ></img>
+<img class="column-gallery" src="3.jpg" width="100%" ></img>
+<img class="column-gallery" src="4.jpg" width="100%" ></img>
+<img class="column-gallery" src="5.jpg" width="100%" ></img>
+<img class="column-gallery" src="6.jpg" width="100%" ></img>
+</div>
+
+
+
+
+
+<div id="Contact" class="content contact-class" style="display:none">
+<h1>Let's Connect</h1>
+<br>
+</br>
+<a href="https://www.linkedin.com/in/sachin-goud-92277768/" target="_blank"><i style="padding:10px 10px 10px 10px" class="fa fa-linkedin-square" style="font-size:48px;color:red"></i></a>
+<a href="https://github.com/SachinGoud9/" target="_blank"><i style="padding:10px 10px 10px 10px"  class="fa fa-github" style="font-size:48px;"></i></a>
+<a href="https://www.instagram.com/sach_in_goud/" target="_blank"><i style="padding:10px 10px 10px 10px"  class="fa fa-instagram" style="font-size:48px;color:red"></i></a>
+<a href="https://www.facebook.com/sachingoud200/" target="_blank"><i style="padding:10px 10px 10px 10px"  class="fa fa-facebook" style="font-size:48px;color:red"></i></a>
+</div>
+</body>
+</html>
